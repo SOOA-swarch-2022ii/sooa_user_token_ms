@@ -10,7 +10,11 @@ func Routes() *mux.Router {
 
 	router := mux.NewRouter()
 	router.HandleFunc("/register-user/", control.NewUser).Methods("POST")
-	//router.HandleFunc("/user/un={username}", control.GetUserByUN).Methods("GET")
+	router.HandleFunc("/user/un={username}", control.GetUserByUN).Methods("GET")
+	//login route
+	router.HandleFunc("/login", control.Login).Methods("POST")
+
+	
 	//router.HandleFunc("/user/login/{username}", control.Login).Methods("GET")
 
 
