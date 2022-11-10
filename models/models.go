@@ -3,7 +3,7 @@ package models
 type User struct {
 	ID        string `bson:"id" json:"id"`
 	Username  string `bson:"username,omitempty" json:"username,omitempty"`
-	Birthdate Date `bson:"birthdate,omitempty" json:"birthdate,omitempty"`
+	Birthdate string `bson:"birthdate,omitempty" json:"birthdate,omitempty"`
 	Names     string `bson:"names,omitempty" json:"names,omitempty"`
 	Lastnames string `bson:"last_names,omitempty" json:"last_names,omitempty"`
 	Role 	string `bson:"role,omitempty" json:"role,omitempty"`
